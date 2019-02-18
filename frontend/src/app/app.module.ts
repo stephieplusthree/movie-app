@@ -1,23 +1,19 @@
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ClarityModule } from '@clr/angular';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppLayoutComponent } from './layout/app-layout/app-layout.component';
+import { SiteLayoutComponent } from './layout/site-layout/site-layout.component';
+import { AppHeaderComponent } from './layout/app-header/app-header.component';
+import { SiteHeaderComponent } from './layout/site-header/site-header.component';
+import { SiteFooterComponent } from './layout/site-footer/site-footer.component';
+
+import { routing } from './app.routing';
 
 @NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ClarityModule,
-    BrowserAnimationsModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+  imports:      [ BrowserModule, FormsModule, routing ],
+  declarations: [ AppComponent, AppLayoutComponent, SiteLayoutComponent, AppHeaderComponent, SiteHeaderComponent, SiteFooterComponent ],
+  bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
