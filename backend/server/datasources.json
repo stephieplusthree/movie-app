@@ -6,11 +6,11 @@
   "mongo": {
     "host": "",
     "port": 0,
-    "url": "mongodb://stephieplusthree:Maliakkjr1!@cluster0-shard-00-00-pepkx.mongodb.net:27017,cluster0-shard-00-01-pepkx.mongodb.net:27017,cluster0-shard-00-02-pepkx.mongodb.net:27017/test?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true",
-    "database": "admin1",
-    "password": "Maliakkjr1!",
+    "url": "mongodb+srv://admin:admin@cluster0-l5w4b.mongodb.net/example?retryWrites=true",
+    "database": "example",
+    "password": "admin",
     "name": "mongo",
-    "user": "stephieplusthree",
+    "user": "admin",
     "connector": "mongodb"
   }
 }

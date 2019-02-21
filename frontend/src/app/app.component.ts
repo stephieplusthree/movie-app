@@ -10,7 +10,7 @@ import { ApiService } from './api.service';
 export class AppComponent  {
   data;
   input;
-  test = 'test '
+  
   
   constructor(public _api: ApiService) {}
   
